@@ -7,9 +7,14 @@ Moodle автоматически обновляет базы данных. Мо
 ***Внимание! Для версии 3.5 нужно использовать php не выше версии 7.0 .***
 После обновления базы, нужно на всякий случай сделать резервную копию БД, и подключить к установленному moodle 3.9, и система автоматически обновит таблицы до версии 3.9.
 
-# Обновление Moodle 3.8 -> 3.9
+# Установка Moodle 3.9
 
+Установка версии 3.9+
 ```sh
-cd dillinger
-docker build -t joemccann/dillinger:${package.json.version} .
+$ cd /path/to/your/webroot
+$ git clone git://git.moodle.org/moodle.git
+$ cd moodle
+$ git branch -a 
+$ git branch --track MOODLE_39_STABLE origin/MOODLE_39_STABLE
+$ git checkout MOODLE_39_STABLE
 ```
