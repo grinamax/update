@@ -18,3 +18,19 @@ $ git branch -a
 $ git branch --track MOODLE_39_STABLE origin/MOODLE_39_STABLE
 $ git checkout MOODLE_39_STABLE
 ```
+# Установка Moodle 3.4
+
+Установка версии 3.9+
+```sh
+$ cd /path/to/your/webroot
+$ git clone git://git.moodle.org/moodle.git
+$ cd moodle
+$ git branch -a 
+$ git branch --track MOODLE_34_STABLE origin/MOODLE_34_STABLE
+$ git checkout MOODLE_34_STABLE
+```
+
+
+# Обновление файлов ядра мудл, исправленных ОГ
+Для обновления ядра правками сделанными для ядра более ранеей версии, нужно проверить с помощью git вносились ли правки в нужные файлы со времен последней ветки, если не вносились то можно их обновлять патчем.
+
